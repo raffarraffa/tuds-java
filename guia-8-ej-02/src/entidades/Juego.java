@@ -18,7 +18,6 @@ public class Juego {
 
     /* este metodo es al pedo, los de EGG son insufribles aguanten los propfes JUAN y CRISTINA */
     public void llenarJuego(ArrayList<Jugador> jugadores, Revolver revolver) {
-        
         this.jugadores = jugadores;
         this.revolver = revolver;
     }
@@ -28,22 +27,33 @@ public class Juego {
  * Al final del juego, se debe mostrar que jugador se mojó.
  * Pensar la lógica necesaria para realizar esto, usando los atributos de la clase Juego
 */
-    public boolean rondaJuego() {
+    //public boolean rondaJuego() {
+    public void rondaJuego() {
         fin_juego = true;
-        
+        int ronda=1;
         do {
-            for (Jugador jugador : jugadores) {
+            System.out.println("------- Ronda "+ ronda + " -------");
+                for (Jugador jugador : jugadores) {
                 jugador.disparoRevolver(revolver);
+                 System.out.print("Jugador  " + jugador.getNombre());
+                if(jugador.isMojado()){
+                    System.out.println(" mojado");
+                    System.out.println("---- FIN DEL JUEGO ----");
+                 fin_juego = false;
+                 break;
+                
+                }
+                System.out.println(" ZAFASTE");
             }
-            
-        } while (!fin_juego);
+            ronda++;
+        } while (fin_juego);
         
-        return fin_juego;
+//        return fin_juego;
     }
 
     @Override
     public String toString() {
-        return "Juego{" + "jugadores=" + jugadores + "\n revolver=" + revolver + "\n fin_juego=" + fin_juego + '}';
+        return "Juego{" + "jugadores= " + jugadores + "\n revolver=" + revolver + "\n fin_juego=" + fin_juego + '}';
     }
 
 }

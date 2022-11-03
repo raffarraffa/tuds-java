@@ -42,30 +42,77 @@ public class Guia8Ej02 {
     static Scanner leer = new Scanner(System.in).useDelimiter("\n");
 
     public static void main(String[] args) {
+
+  /*      
+System.out.println("WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW");
+System.out.println("WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW");
+System.out.println("WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW0odKWWWWWWWWWWWWWWWWWWWW");
+System.out.println("WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWXx,..:ONWWWWWWWWWWWWWWWWWW");
+System.out.println("WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWKdc;:llc;oXWWWWWWWWWWWWWWWWW");
+System.out.println("WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWX0ocool:'..'oXWWWWWWWWWWWWWWWW");
+System.out.println("WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWNKkxdoc:'.',''.cKWWWWWWWWWWWWWWWW");
+System.out.println("WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWNKkxxoc;..',,'';oONWWWWWWWWWWWWWWWWW");
+System.out.println("WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWNXXKkdxdc;..',,'':d0NWWWWWWWWWWWWWWWWWWWW");
+System.out.println("WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWN0xddxdol;..',,'':d0NWWWWWWWWWWWWWWWWWWWWWWW");
+System.out.println("WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWNKOxoool::;..',''':dKNWWWWWWWMMWWWWWWWWWWWWWWWWW");
+System.out.println("WWWWWWWWWWWWWWWWWWWWWWWWWWWWNKkl,..;l:;:c:;,',cxKNWWWWWWWWWWWWWWWWWWWWWWWWWWWWW");
+System.out.println("WWWWWWWWWWWWWWWWWWWWWWWNXKKkl,.  .. .dXNNO;;xKWWWWWMWWWWWWWWWWWWWWWWWWWWWWWWWWW");
+System.out.println("WWWWWWWWWWWWWWWWWWWWW0oloc,. ..'.....cxlcc:dNWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW");
+System.out.println("WWWWWWWWWWWWWWWWWWWWWOcxXc 'o0Oc. ...',;coddKWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW");
+System.out.println("WWWWWWWWWWWWWWWWWWWWWXokWx':kd;..','..cOKXNkl0WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW");
+System.out.println("WWWWWWWWWWWWWWWWWNOxd:.dWNx' .'::;,;d0NNXOlco0WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW");
+System.out.println("WWWWWWWWWWWWWWWWWXkxkccKMMW0l::;cdO0xdxl;;dXWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW");
+System.out.println("WWWWWWWWWWWWWWWWWWWMOckWMMMMMNKKKx;'cxkdll0WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW");
+System.out.println("WWWWWWWWWWWWWWWWWWXd. :XMMMMMMWO;. .kMMMW0kXWWWWMWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW");
+System.out.println("WWWWWWWWWWWWWWWWWWO,   ;kKKOdlc,;xxcck000xxNWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW");
+System.out.println("WWWWWWWWWWWWWWWWWWNk.    ..     ,0WNOdlclxXWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW");
+System.out.println("WWWWWWWWWWWWWWWWWWWNc            :kOOkOKNWWWWMWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW");
+System.out.println("WWWWWWWWWWWWWWWWWWWWo         .,oOXKKNWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW");
+System.out.println("WWWWWWWWWWWWWWWWWWWWo        .oNWWWWWWWWWWWWWMWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW");
+System.out.println("WWWWWWWWWWWWWWWWWWWWd         ;kXWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW");
+System.out.println("WWWWWWWWWWWWWWWWWWWMk.         .xWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW");
+System.out.println("WWWWWWWWWWWWWWWWMWWWK;          :ONWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW");
+System.out.println("WWWWWWWWWWWWWWWWWWWWWo.          'OWWWMWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW");
+System.out.println("WWWWWWWWWWWWWWWWWWWWWK;          .OWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW");
+System.out.println("WWWWWWWWWWWWWWWWWMWWWWO.         ;0WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW");
+System.out.println("WWWWWWWWWWWWWWWWWWWWWWNl      .;xXWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW");
+System.out.println("WWWWWWWWWWWWWWWWWWWWWWW0;..,cd0NWWWWWMWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW");
+System.out.println("WWWWWWWWWWWWWWWWWWWWWWWWX0KNWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW");
+System.out.println("WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW");
+*/
+
         // variables entorno
         ArrayList<Jugador> jugadores = new ArrayList();
         Juego game = new Juego();
         Revolver revolver = new Revolver();
         revolver.cargarRevolver();
-        int cant_jugadores;
-
+        //        int cant_jugadores;
 // debug
         ArrayList<String> aux_jug = new ArrayList();
         aux_jug.add("Rafa");
         aux_jug.add("Leo");
         aux_jug.add("Mari");
         aux_jug.add("Pablo");
-        for (int i = 0; i < 4; i++) {
+        aux_jug.add("Natalia");
+        aux_jug.add("Juana");
+        for (int i = 0; i < aux_jug.size(); i++) {
             Jugador jugador = new Jugador();
             jugador.setId(i);
             jugador.setNombre(aux_jug.get(i));
             jugadores.add(jugador);
         }
+        game.llenarJuego(jugadores, revolver);
+     //   System.out.println(game);
+        game.rondaJuego();
+     //   System.out.println(game);
+        
+        //System.out.print("Cantidad jugadores maxima alcanzada \n juegan 6 jugadores");
         // logica
 
         /* cant_jugadores = leer.nextInt();
-                System.out.print("Ingrese cantidad jugadores (0 - 6)-> ");
+                System.out.print("Ingrese cantidad jugadores (1 - 6)-> ");
         if (cant_jugadores > 6) {
+                System.out.print("Cantidad jugadores maxima alcanzada \n juegan 6 jugadores");
             cant_jugadores = 6;
         }
         
@@ -78,10 +125,8 @@ public class Guia8Ej02 {
         }
          */
         // inicalizamos juego
-        game.llenarJuego(jugadores, revolver);
-        System.out.println(game);
-        game.rondaJuego();
-        System.out.println(game);
+     
+
 
         /*    
         int opcion_menu = 100;
@@ -144,3 +189,6 @@ public class Guia8Ej02 {
         }
     }
          */
+    }
+}
+

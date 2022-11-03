@@ -26,15 +26,19 @@ public class Jugador {
         return nombre;
     }
 
+    public boolean isMojado() {
+        return mojado;
+    }
+
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
 
     public boolean disparoRevolver(Revolver revolver) {
 
-        if (revolver.mojar(id)) {
+        if (revolver.mojar()) {// puede esta mal la logica porque el jugador deberia gatillar al azar
             mojado = true;
-        } else {
+           } else {
             revolver.siguienteChorro();
         }
         return mojado;

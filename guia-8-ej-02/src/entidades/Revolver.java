@@ -10,20 +10,32 @@ public class Revolver {
     }
 
     public void cargarRevolver() {
-        this.posicion_actual = (int) (Math.random() * 5);
-        this.posicion_carga = (int) (Math.random() * 5);
+        this.posicion_actual = (int) (Math.random() * 6);
+        this.posicion_carga = (int) (Math.random() * 6);
     }
 
-    public boolean mojar(int id) {
-       
-        return (id == posicion_carga);
+    public int getPosicion_actual() {
+        return posicion_actual;
+    }
+
+    public int getPosicion_carga() {
+        return posicion_carga;
+    }
+
+    public boolean mojar() {
+
+//        return (id == posicion_carga);
+        return (posicion_actual == posicion_carga);
     }
 
     public void siguienteChorro() {
-    posicion_actual++; 
-        if (posicion_actual == 6) { // posicion maxima 5
+        /*
+        posicion_actual++;
+        if (posicion_actual == 6) { // posicion maxima 5 (de 0 a 5)
             posicion_actual = 0;
-       }
+        }
+        */
+        posicion_actual = (int) (Math.random() * 6);
     }
 
     @Override
