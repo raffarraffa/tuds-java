@@ -28,15 +28,9 @@
 package guia.pkg8.ej.pkg02;
 
 import entidades.*;
-import java.awt.AWTException;
-import java.awt.Robot;
-import java.awt.event.KeyEvent;
 import java.util.*;
 
-/**
- *
- * @author User
- */
+
 public class Guia8Ej02 {
 
     static Scanner leer = new Scanner(System.in).useDelimiter("\n");
@@ -49,8 +43,8 @@ public class Guia8Ej02 {
         revolver.cargarRevolver();
         int cant_jugadores;
         // logica
-        cant_jugadores = leer.nextInt();
         System.out.print("Ingrese cantidad jugadores (1 - 6)-> ");
+        cant_jugadores = leer.nextInt();
         if (cant_jugadores > 6) {
             System.out.print("Cantidad jugadores maxima alcanzada \n juegan 6 jugadores");
             cant_jugadores = 6;
@@ -58,11 +52,12 @@ public class Guia8Ej02 {
         for (int i = 0; i < cant_jugadores; i++) {
             Jugador jugador = new Jugador();
             jugador.setId(i);
-            System.out.print("Ingrese nombre");
+            System.out.print("Ingrese nombre -> ");
             jugador.setNombre(leer.next());
             jugadores.add(jugador);
         }
+
         game.llenarJuego(jugadores, revolver);
-        game.rondaJuego();
+        game.rondaJuego(leer);
     }
 }
