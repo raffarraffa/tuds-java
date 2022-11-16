@@ -1,28 +1,3 @@
-/**
- * @Override
-    public Double precioFinal()
-    {
-     Double precioFinal = super.precioFinal();
-     
-     if (getCarga().doubleValue() > 30)
-        { precioFinal = precioFinal.intValue() + 500.0; }
-     
-     //System.out.print("\n [Debug@Lavadora] Precio final seteado en $" + precioFinal.toString());
-     
-     return precioFinal;
-    }
-@Override
-    public Double precioFinal()
-    {
-     Double precioFinal = super.precioFinal();
-     
-     if (getCarga().doubleValue() > 30)
-        { precioFinal = precioFinal.intValue() + 500.0; }
-     
-     return precioFinal;
-    }
-
- */
 package guia09ejercicio02;
 
 import guia09ejercicio02.entidades.Electrodomestico;
