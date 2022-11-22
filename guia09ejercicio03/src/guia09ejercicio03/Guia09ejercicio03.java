@@ -1,6 +1,7 @@
 package guia09ejercicio03;
 /* 
 	esto esta editado ahora 22/11/2022 19:44
+VER GIT
 */
 
 import guia09ejercicio03.entidades.Electrodomestico;
